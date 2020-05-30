@@ -1,3 +1,4 @@
+require 'pry'
 def welcome
   puts "Welcome to the Blackjack Table"
 end
@@ -17,6 +18,7 @@ end
 def get_user_input
   input = gets.chomp 
   input
+  binding.pry
 end
 
 def end_game(number)
